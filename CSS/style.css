@@ -1,0 +1,47 @@
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size:50px ;
+    line-height: 60px;
+    padding-block: 8px;
+    font-weight: 500;
+    position: relative;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 50%;
+}
+.border-top{
+    border-top: dotted !important;
+}
+h2{
+    font-family: "Righteous" ;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-size:25px ;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 30px;
+    padding-block: 8px;
+    font-weight: 500;
+}
+.bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba(217, 253, 13, 0.767);
+}
